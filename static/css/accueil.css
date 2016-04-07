@@ -1,16 +1,29 @@
-header {
+#cover {
+  width: 100%;
+  height:100%;
+  /*background-image: url(static/images/image_accueil.jpg);*/
+  background: url(../../static/images/image_accueil.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top:0;
+  left:0;
+  z-index: -1;
+  position: absolute;
 }
 
-#cover {
-	width: 100%;
+.image
+{
+  max-width: 100%;
 }
-#cover {
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
+
+
+.texteBase
+{
+  color: #4d4d4d;
 }
+
 .slogan {
   clear: both;
   color: white;
@@ -19,10 +32,11 @@ header {
   margin: 30px auto auto;
   text-transform: uppercase;
   width: 562px;
+  text-shadow: 0px 0px 4px black;
 }
 form.accueil {
   margin: 130px auto;
-  width: 700px;
+  width: 320px;
 }
 form.accueil select {
    width: 240px;
@@ -30,4 +44,91 @@ form.accueil select {
    overflow: hidden;
    background: url(new_arrow.png) no-repeat right #ddd;
    border: 1px solid #ccc;
+}
+
+.titre
+{
+  margin-top : 45%;
+  text-align: center;
+}
+.petitTitre
+{
+  text-align: center;
+  font-size: 0.9em;
+}
+#annonces
+{
+  margin-top: 50px;
+  color: white;
+  text-shadow: 0px 0px 4px black;
+  text-align: center;
+  font-size: 140%;
+  line-height: 9em;
+}
+
+body div div div.annonces1
+{
+  display: block;
+  margin-top: 1em;
+  margin-left: 9%;
+  height: 0;
+  padding-bottom: 21%;
+  width: 21%;
+  background-color: white;
+  border-radius: 50%;
+  float: left;
+}
+body div div div.annonces1:hover
+{
+  transform: scale(1.10);
+  -ms-transform: scale(1.10);
+  -webkit-transform: scale(1.10);
+  -o-transform: scale(1.10);
+  -moz-transform: scale(1.10);
+}
+
+#annonce1
+{ 
+   background: url(../../static/images/football.jpeg) no-repeat ;
+   background-position: 50% 69%;
+}
+#annonce2
+{ 
+   background: url(../../static/images/tennis.jpeg) no-repeat;
+   background-position: right;
+}
+
+#annonce4
+{
+  
+}
+
+#annonce5
+{
+  background: url(../../static/images/cyclisme_miniature.jpeg);
+  background-position: 78% 120%;
+}
+
+#annonce6
+{
+  background: url(../../static/images/randonnee.jpg);
+  background-position: 50% 85%;
+}
+
+.fond
+{
+  position: absolute;
+  background-color: #edefed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 5000px;
+  z-index: -2;
+}
+header
+{
+  background-color: transparent;
+}
+.page
+{
 }
